@@ -1,0 +1,1 @@
+This repository contains the three programs for the Chapter 3 homework. Each program is on a separate branch.
