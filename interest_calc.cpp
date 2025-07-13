@@ -15,7 +15,13 @@ int main(){
     std::cin >> times_compounded;
 
     float savings_amt = principal * std::pow((1 + ((interest_rate / 100) / times_compounded)), times_compounded);
+    float interest = savings_amt - principal;
 
-    std::cout << "The total amount available is: " << savings_amt << std::endl;
+    std::cout << "Interest Rate: " << interest_rate << "%" << std::endl;
+    std::cout << "Times Compounded: " << times_compounded << std::endl;
+    std::cout << "Principal: $" << principal << std::endl;
+    std::cout << "Interest: $" << interest << std::endl;
+    std::cout << "Amount in Savings: $" << savings_amt << std::endl;
+    
     return 0;
 }
