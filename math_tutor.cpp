@@ -12,9 +12,12 @@ int main(){
     /*
     Because this is for a young student and the instructions are not as restrictive, 
     I am choosing to output positive integers as my random numbers.
-    I initially tried just outputting random integers, but this was producing large numbers 
-    which when added would produce a negative answer due to the sum being larger than
-    2^31 -1 (e.g. 956558418 + 1627330731 = -1711078147)
+    I initially tried just outputting random integers without upper/lower bounds, but this was
+    producing large numbers which when added would produce a negative answer due to the sum 
+    being larger than 2^31 -1 (e.g. 956558418 + 1627330731 = -1711078147)
+    If you would like larger/smaller or positive/negative numbers, you can change the arguments
+    in dist() on line 10.
+
     I am also opting to use a uniform distribution so that the student can get practice
     across numbers which are equally likely to occur.
     */
