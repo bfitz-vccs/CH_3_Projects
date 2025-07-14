@@ -1,7 +1,10 @@
 #include <iostream>
 #include <random>
+#include <iomanip>
+#include <string>
 
 int main(){
+
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<>dist(1, 1000);
@@ -20,10 +23,13 @@ int main(){
     int rand_num2 = dist(gen);
     int answer = rand_num1 + rand_num2;
 
-    std::cout << rand_num1 << std::endl;
-    std::cout << "+" << rand_num2;
+    std::cout << std::setw(1) << " " << std::setw(3) << rand_num1 << std::endl;
+    std::cout << std::setw(1) << "+" << std::setw(3) << rand_num2;
     std::cin.get();
-    std::cout << answer << std::endl;
+    std::cout << std::setw(4) << answer << std::endl;
+    /*
+    The output is configured so that everything is right-aligned.
+    */
 
     return 0;
 }
